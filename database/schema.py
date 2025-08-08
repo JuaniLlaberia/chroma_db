@@ -5,7 +5,7 @@ COLLECTION_SCHEMAS = {
         name="documents",
         description="",
         metadata_schema={},
-        chunk_size=500,
-        chunk_overlap=50
+        chunk_size=750,
+        chunk_overlap=100
     ),
 }
