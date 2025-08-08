@@ -37,7 +37,7 @@ class ChromaDBService:
 
         return collections_manager, initialized_collections
 
-    def run(self, host: str = "0.0.0.0", port: int = 8000):
+    def run(self, host: str = "localhost", port: int = 8000):
         """
         Runs pipeline to initialize ChromaDB and its collections
         """

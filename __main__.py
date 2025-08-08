@@ -11,7 +11,7 @@ def main():
     Starts the ChromaDB server to access the DB
     """
     chromadb_service = ChromaDBService()
-    chromadb_service.run(host="0.0.0.0", port=8000)
+    chromadb_service.run(host="localhost", port=8000)
 
 if __name__ == "__main__":
     main()
