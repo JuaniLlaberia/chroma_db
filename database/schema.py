@@ -1,0 +1,11 @@
+from .collections import CollectionConfig
+
+COLLECTION_SCHEMAS = {
+    "documents": CollectionConfig(
+        name="documents",
+        description="",
+        metadata_schema={},
+        chunk_size=500,
+        chunk_overlap=50
+    ),
+}
