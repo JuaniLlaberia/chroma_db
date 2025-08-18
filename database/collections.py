@@ -10,8 +10,6 @@ class CollectionConfig(BaseModel):
     name: str
     description: str
     metadata_schema: Dict[str, str]
-    chunk_size: int = 500
-    chunk_overlap: int = 50
 
 class CollectionManager:
     def __init__(self, client: ClientAPI, embedding_fn: OllamaEmbeddingFunction):
@@ -28,8 +26,6 @@ class CollectionManager:
             embedding_function=self.embedding_fn,
             metadata={
                 "description": collection_config.description,
-                "chunk_size": collection_config.chunk_size,
-                "chunk_overlap": collection_config.chunk_overlap,
                 "metadata_schema": json.dumps(collection_config.metadata_schema)
             }
         )
